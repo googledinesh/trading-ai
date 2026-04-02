@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Trading Signal Analysis</title>
+</head>
+<body>
+    <h1>AI Trading Signal Analysis</h1>
+    <form id="upload-form">
+        <label for="screenshot">Upload Screenshot:</label>
+        <input type="file" id="screenshot" name="screenshot" accept="image/*" required>
+        <button type="submit">Analyze</button>
+    </form>
+    <div id="results">
+        <!-- Analysis results will be displayed here -->
+    </div>
+    <script>
+        document.getElementById('upload-form').onsubmit = function(event) {
+            event.preventDefault();
+            const fileInput = document.getElementById('screenshot');
+            const file = fileInput.files[0];
+            // Add logic for uploading the screenshot and analyzing it
+            alert('Upload functionality is not implemented yet.');
+        };
+    </script>
+</body>
+</html>
